@@ -1,3 +1,24 @@
+@charset "UTF-8";
+
+/* Código Front (https://www.codigofront.com.br/)
+Copyright 2021-2022 Naira Cirino */
+
+:root {
+    /* cores e gradientes */
+    --white: #fff;
+    --black: #000;
+
+    /* tipografia */
+    --sans-serif: 'Coolvetica Rg', sans-serif;
+    --serif: 'Coolvetica Condensed Rg', serif;
+    --cursive: 'Blabla', cursive;
+    --monospace: 'Fulana', monospace;
+    font-size: 16px;
+
+    /* comportamento de tela */
+    scroll-behavior: smooth;
+}
+
 /* erasing browser standards */
 
 * {
@@ -31,7 +52,22 @@ nav, .topnavbar, .topnavlinks {
 /* signature */
 
 .signature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+}
+
+#signaturetitle {
+    text-transform: uppercase;
+}
+
+#signaturetext {
+    text-align: justify;
+}
+
+#signaturesignature {
+    font-family: ;
 }
 
 /* mosaic pictures on top */
@@ -39,6 +75,11 @@ nav, .topnavbar, .topnavlinks {
 .block, .picstop {
     display: flex;
     flex-direction: row;
+}
+
+.blockreverse {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 /* mosaic pictures on bottom */

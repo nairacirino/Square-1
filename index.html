@@ -52,11 +52,14 @@
 
         <!--hero banner start-->
         <section class="herobanner">
-            <h1>Lorem ipsum dolor sit amet consectetur</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nobis quas doloremque quo dolores
-                exercitationem veritatis eum. Dicta, nobis! Eveniet unde ut illum porro eius eos dolorem exercitationem
-                rerum minus!</p>
-            <a href="#" role="button">Click Here</a>
+            <div class="col-md-5">
+                <h1>Lorem ipsum dolor sit amet consectetur</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nobis quas doloremque quo dolores
+                    exercitationem veritatis eum. Dicta, nobis! Eveniet unde ut illum porro eius eos dolorem
+                    exercitationem
+                    rerum minus!</p>
+                <a href="#" role="button">Click Here</a>
+            </div>
         </section>
         <!--end hero banner-->
     </header>
@@ -65,40 +68,42 @@
     <main>
 
         <section class="signature">
-            <h2>Lorem ipsum dolor sit amet consectetur</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium veritatis aliquid quo nisi
-                sint. Esse, praesentium incidunt. Nostrum maiores molestiae dolor illo neque amet culpa animi modi
-                porro. Molestiae!</p>
-            <p>Fulano de Ciclano</p>
+            <div class="col-10 col-lg-8">
+                <h2 id="signaturetitle">Lorem ipsum dolor sit amet consectetur</h2>
+                <p id="signaturetext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias laudantium veritatis aliquid quo nisi
+                    sint. Esse, praesentium incidunt. Nostrum maiores molestiae dolor illo neque amet culpa animi modi
+                    porro. Molestiae!</p>
+                <p id="signaturesignature">Fulano de Ciclano</p>
+            </div>
         </section>
 
-        <section class="picstop">
+        <section class="picstop col-12">
             <!--bigger image on the left-->
-            <figure>
+            <figure class="col-md-6">
                 <img src="#" alt="">
             </figure>
             <!--four squares on the right side-->
-            <div class="wrapblock">
+            <div class="wrapblock col-md-6">
                 <!--single top block with image + text-->
                 <div class="block">
-                    <div class="blocktext">
+                    <div class="blocktext col-md-6">
                         <h3>Lorem ipsum</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <a role="button" href="#">Click here</a>
                     </div>
-                    <figure>
+                    <figure class="col-md-6">
                         <img src="#" alt="">
                     </figure>
                 </div>
                 <!--end top block-->
                 <!--single bottom block with image + text-->
-                <div class="block">
-                    <div class="blocktext">
+                <div class="blockreverse">
+                    <div class="blocktext col-md-6">
                         <h3>Lorem ipsum</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <a role="button" href="#">Click here</a>
                     </div>
-                    <figure>
+                    <figure class="col-md-6">
                         <img src="#" alt="">
                     </figure>
                 </div>
@@ -107,21 +112,21 @@
             <!--end wrap on the four squares-->
         </section>
 
-        <section class="picsbottom">
+        <section class="picsbottom col-12">
             <!--single block on the left side-->
             <div class="block">
-                <div class="blocktext">
+                <div class="blocktext col-md-6">
                     <h3>Lorem ipsum</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     <a role="button" href="#">Click here</a>
                 </div>
-                <figure>
+                <figure class="col-md-6">
                     <img src="#" alt="">
                 </figure>
             </div>
             <!--end of single block-->
             <!--bigger image on the right side-->
-            <figure>
+            <figure class="col-md-6">
                 <img src="#" alt="">
             </figure>
         </section>
@@ -129,13 +134,13 @@
 
     <footer>
         <!--1/4 of footer-->
-        <div class="left">
+        <div class="left col-md-3">
             <h3>COMPANY</h3>
             <img src="#" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         <!--2/4 of footer-->
-        <div class="mleft">
+        <div class="mleft col-md-3">
             <h4>Nosso Blog</h4>
             <div class="posts">
                 <div class="singlepost">
@@ -153,7 +158,7 @@
             </div>
         </div>
         <!--3/4 of footer-->
-        <div class="mright">
+        <div class="mright col-md-3">
             <h4>Twitter</h4>
             <div class="tweets">
                 <div class="singletweet">
@@ -164,7 +169,7 @@
                         <a href="#">Leia mais</a>
                     </div>
                 </div>
-                
+
                 <div class="singletweet">
                     <i class="fa-brands fa-twitter"></i>
                     <div class="singletweettext">
@@ -176,7 +181,7 @@
             </div>
         </div>
         <!--4/4 of footer-->
-        <div class="right">
+        <div class="right col-md-3">
             <h4>Inscreva-se</h4>
             <input type="text">
             <a href="#" role="button"><i class="fa-solid fa-right-to-bracket"></i></a>
