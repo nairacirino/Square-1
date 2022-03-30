@@ -1,1 +1,56 @@
-/* 
+/* erasing browser standards */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/* header */
+
+nav, .topnavbar, .topnavlinks {
+    display: flex;
+    flex-direction: row;
+}
+
+.topnavbar {
+    justify-content: space-between;
+}
+
+/* herobanner */
+
+.herobanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* signature */
+
+.signature {
+    text-align: center;
+}
+
+/* mosaic pictures on top */
+
+.block, .picstop {
+    display: flex;
+    flex-direction: row;
+}
+
+/* mosaic pictures on bottom */
+
+.picsbottom {
+    display: flex;
+    flex-direction: row;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
