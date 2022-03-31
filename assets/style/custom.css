@@ -5,8 +5,11 @@ Copyright 2021-2022 Naira Cirino */
 
 :root {
     /* cores e gradientes */
-    --white: #fff;
-    --black: #000;
+    --white: #f5f5f5;
+    --light-gray: #ebebeb;
+    --medium-gray: #747474;
+    --dark-gray: #3e3e3e;
+    --black: #171717;
 
     /* tipografia */
     --sans-serif: 'Coolvetica Rg', sans-serif;
@@ -30,6 +33,40 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* standard styles */
+
+body {
+    background-color: var(--white);
+    color: var(--medium-gray);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.img-square {
+    width: 25vw;
+    height: 25vw;
+}
+
+.img-rect {
+    width: 50vw;
+    height: 25vw;
+}
+
 /* header */
 
 nav, .topnavbar, .topnavlinks {
@@ -39,6 +76,7 @@ nav, .topnavbar, .topnavlinks {
 
 .topnavbar {
     justify-content: space-between;
+    background-color: var(--white);
 }
 
 /* herobanner */
@@ -47,6 +85,11 @@ nav, .topnavbar, .topnavlinks {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: url(../img/herobg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 /* signature */
@@ -56,6 +99,7 @@ nav, .topnavbar, .topnavlinks {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    background-color: var(--light-gray);
 }
 
 #signaturetitle {
@@ -89,9 +133,21 @@ nav, .topnavbar, .topnavlinks {
     flex-direction: row;
 }
 
+#bottomimg {
+    background: url(../img/9.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
 /* footer */
 
 footer {
     display: flex;
     flex-direction: row;
+    background-color: var(--black);
+    color: var(--medium-gray);
+}
+
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+    color: var(--light-gray);
 }
