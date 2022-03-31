@@ -57,14 +57,22 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-.img-square {
-    width: 25vw;
-    height: 25vw;
+img {
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
-.img-rect {
-    width: 50vw;
-    height: 25vw;
+.img-square {
+    width: 100%;
+    height: 100%;
+}
+
+.imground {
+    border-radius: 50%;
+}
+
+.blocktext {
+    padding: 2rem;
 }
 
 /* header */
@@ -119,11 +127,14 @@ nav, .topnavbar, .topnavlinks {
 .block, .picstop {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .blockreverse {
     display: flex;
     flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 /* mosaic pictures on bottom */
@@ -131,12 +142,7 @@ nav, .topnavbar, .topnavlinks {
 .picsbottom {
     display: flex;
     flex-direction: row;
-}
-
-#bottomimg {
-    background: url(../img/9.jpeg);
-    background-size: cover;
-    background-position: center;
+    flex-wrap: wrap;
 }
 
 /* footer */
@@ -144,10 +150,40 @@ nav, .topnavbar, .topnavlinks {
 footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: var(--black);
     color: var(--medium-gray);
 }
 
+footer>div {
+padding: 2rem;
+}
+
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
     color: var(--light-gray);
+}
+
+/* responsivo */
+
+/* xs devices */
+
+@media (max-width: 576px) {
+
+    
+}
+
+/* sm devices */
+
+@media (max-width: 767px) {
+    
+}
+
+/* md devices */
+
+@media (min-width: 768px) {
+    .img-rect {
+        width: 50vw;
+        height: 25vw;
+    }
+
 }
