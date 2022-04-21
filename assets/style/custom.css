@@ -39,6 +39,10 @@ a {
     cursor: pointer;
 }
 
+a:hover {
+    color: inherit;
+}
+
 figure {
     margin: 0;
     padding: 0;
@@ -100,6 +104,42 @@ nav, .topnavbar, .topnavlinks {
     min-height: 100vh;
 }
 
+.heroglass {
+    margin: 0 2rem;
+    padding: 1rem;
+    background-color: #ebebebc7;
+}
+
+.herotext {
+    opacity: 1;
+}
+
+.ctabutton {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--light-gray);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: var(--black);
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    -webkit-box-shadow: 2px 2px 4px 0 #5c5c5c;
+    box-shadow: 2px 2px 4px 0 #5c5c5c;
+    transition: all .5s;
+}
+
+.ctabutton:hover, .ctabutton:checked {
+    background-color: var(--white);
+    color: var(--black);
+    -webkit-box-shadow: inset 2px 2px 4px 0 #8d8d8d;
+    box-shadow: inset 2px 2px 4px 0 #8d8d8d;
+    transition: all .5s;
+}
+
 /* signature */
 
 .signature {
@@ -108,6 +148,7 @@ nav, .topnavbar, .topnavlinks {
     align-items: center;
     text-align: center;
     background-color: var(--light-gray);
+    padding: 4rem 1rem;
 }
 
 #signaturetitle {
@@ -156,7 +197,7 @@ footer {
 }
 
 footer>div {
-padding: 2rem;
+    padding: 2rem;
 }
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
@@ -167,15 +208,14 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
 
 /* xs devices */
 
-@media (max-width: 576px) {
-
-    
-}
+@media (max-width: 576px) {}
 
 /* sm devices */
 
 @media (max-width: 767px) {
-    
+    .heroglass {
+        text-align: center;
+    }
 }
 
 /* md devices */
@@ -184,6 +224,20 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
     .img-rect {
         width: 50vw;
         height: 25vw;
+    }
+
+    .heroglass {
+        margin: 0px 4rem;
+        padding: 2rem;
+    }
+
+    .heroglass p {
+        margin-top: 1rem;
+    }
+
+    .ctabutton {
+        margin: 1rem 0 0 0;
+        padding: 1rem 1.5rem;
     }
 
 }
