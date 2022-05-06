@@ -24,7 +24,7 @@ Copyright 2021-2022 Naira Cirino */
 
 /* erasing browser standards */
 
-* {
+body, ul, li {
     margin: 0;
     padding: 0;
 }
@@ -84,11 +84,28 @@ img {
 nav, .topnavbar, .topnavlinks {
     display: flex;
     flex-direction: row;
+    gap: 2rem;
+    align-items: center;
 }
 
 .topnavbar {
+    align-items: center;
     justify-content: space-between;
     background-color: var(--white);
+    padding: 1.5rem 3rem;
+}
+
+.topnavbarlogo {
+    height: 1.5rem;
+}
+
+.topnavmenu {
+    color: var(--dark-gray);
+    letter-spacing: 3px;
+}
+
+.topnavmenu i {
+    color: var(--dark-gray);
 }
 
 /* herobanner */
@@ -202,6 +219,50 @@ footer>div {
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
     color: var(--light-gray);
+}
+
+.left img {
+    margin-top: 1rem;
+}
+
+.left p {
+    line-height: 2rem;
+    padding-top: 2rem;
+}
+
+.singlepost, .singletweet {
+    margin-bottom: 1rem;
+}
+
+.singletweet {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+}
+
+.singlepost p, .singletweet p {
+    margin: 0;
+    padding: 0;
+}
+
+.singlepost small {
+    color: var(--medium-gray);
+}
+
+.singletweet i {
+    padding-top: .4rem;
+}
+
+.searchwrap {
+    background-color: var(--dark-gray);
+    width: max-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.searchwrap input {
+    width: 90%;
 }
 
 /* responsivo */
